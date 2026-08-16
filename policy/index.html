@@ -29,9 +29,10 @@
       <p class="meta"><strong>Có hiệu lực và cập nhật lần cuối:</strong> 16 tháng 8 năm 2026</p>
 
       <div class="summary">
-        <strong>Tóm tắt:</strong> HACHI không yêu cầu tài khoản, không có quảng cáo, không có SDK phân tích
-        bên thứ ba và không tự tải dữ liệu ứng dụng lên máy chủ. Dữ liệu bạn chọn lưu nằm trong vùng riêng
-        của ứng dụng trên thiết bị và có thể được xóa bởi bạn.
+        <strong>Tóm tắt:</strong> HACHI không yêu cầu tài khoản và không có quảng cáo. Firebase Analytics tùy
+        chọn được tắt mặc định và chỉ hoạt động sau khi bạn đồng ý. Hành trình chăm HACHI, chi tiết vận động,
+        ghi chú và dữ liệu bữa ăn vẫn nằm trong vùng riêng của ứng dụng trên thiết bị và có thể được xóa bởi
+        bạn. HACHI Plus là nâng cấp tùy chọn mua một lần qua Google Play.
       </div>
 
       <nav class="contents" aria-label="Mục lục">
@@ -41,6 +42,7 @@
           <li><a href="#scope">Phạm vi</a></li>
           <li><a href="#data">Dữ liệu lưu trên thiết bị</a></li>
           <li><a href="#not-collected">Dữ liệu không thu thập</a></li>
+          <li><a href="#analytics">Phân tích tùy chọn và HACHI Plus</a></li>
           <li><a href="#purpose">Mục đích sử dụng</a></li>
           <li><a href="#retention">Lưu giữ và xóa</a></li>
           <li><a href="#sharing">Chia sẻ và liên kết ngoài</a></li>
@@ -99,16 +101,16 @@
       </section>
 
       <section id="not-collected">
-        <h2>4. Dữ liệu và quyền HACHI không thu thập</h2>
+        <h2>4. Dữ liệu và quyền không được tính năng cốt lõi của HACHI sử dụng</h2>
         <p>Bản phát hành này:</p>
         <ul>
           <li>không yêu cầu tạo tài khoản hoặc đăng nhập;</li>
           <li>không hiển thị quảng cáo và không theo dõi người dùng giữa các ứng dụng;</li>
-          <li>không tích hợp SDK phân tích hoặc quảng cáo bên thứ ba;</li>
+          <li>không dùng SDK quảng cáo, mã nhận dạng quảng cáo, cá nhân hóa quảng cáo hoặc mã người dùng;</li>
           <li>không xin quyền camera, ảnh/video, micro, vị trí, danh bạ hoặc cảm biến cơ thể;</li>
           <li>không đọc hoặc ghi dữ liệu Health Connect;</li>
           <li>không lưu ảnh món ăn, dữ liệu camera, mã vạch, dữ liệu GPS hoặc mẫu cảm biến thô;</li>
-          <li>không tự gửi dữ liệu ứng dụng qua Internet.</li>
+          <li>không tải lên hành trình chăm HACHI, chi tiết vận động, ghi chú, dữ liệu bữa ăn hoặc ký ức HACHI.</li>
         </ul>
         <p>
           Google Play và hệ điều hành Android có thể xử lý dữ liệu kỹ thuật riêng để phân phối, bảo vệ và cập
@@ -116,8 +118,34 @@
         </p>
       </section>
 
+      <section id="analytics">
+        <h2>5. Phân tích tùy chọn và giao dịch HACHI Plus</h2>
+        <p>
+          HACHI tích hợp Firebase Analytics để giúp chúng tôi hiểu vòng chăm sóc cơ bản có hoạt động tốt hay
+          không. Tính năng này được <strong>tắt mặc định</strong>. Nếu bạn chủ động bật phân tích trong Cài đặt,
+          HACHI có thể gửi một nhóm sự kiện cố định nhỏ như mở ứng dụng, bắt đầu hoặc hoàn thành vận động, ghi
+          nhận một bước chăm, mở hành trình và trạng thái mua HACHI Plus. HACHI không gắn tham số sự kiện, văn
+          bản tự do, lựa chọn bài tập, quan sát sức khỏe, ghi chú, dữ liệu bữa ăn, ký ức hành trình, số điện
+          thoại, email hoặc mã người dùng vào các sự kiện này.
+        </p>
+        <p>
+          Khi phân tích được bật, Firebase có thể tự xử lý thông tin cơ bản về ứng dụng, thiết bị và phiên sử
+          dụng cùng một mã nhận dạng lượt cài đặt ứng dụng dạng bút danh. Google cung cấp Firebase với vai trò nhà cung cấp
+          dịch vụ cho chúng tôi. Bạn có thể rút lại đồng ý trong Cài đặt HACHI; khi đó việc thu thập bị tắt và
+          HACHI yêu cầu xóa mã phân tích cục bộ. Thông tin đã gửi chịu các cơ chế xử lý và lưu giữ của Google.
+          Xem <a href="https://firebase.google.com/support/privacy">Quyền riêng tư và bảo mật Firebase</a>.
+        </p>
+        <p>
+          HACHI Plus là sản phẩm tùy chọn mua một lần trong ứng dụng, do Google Play bán và xử lý. Google xử lý
+          thông tin thanh toán và giao dịch theo chính sách của họ. HACHI nhận thông tin sản phẩm và trạng thái
+          mua cần thiết để mở Plus và lưu trạng thái quyền lợi cục bộ; ứng dụng không lưu thông tin thẻ hoặc tài
+          khoản ngân hàng của bạn. Một phút vận động miễn phí, các lối thoát an toàn, First Aid, hành trình cốt
+          lõi và ký ức chăm gần đây không yêu cầu HACHI Plus.
+        </p>
+      </section>
+
       <section id="purpose">
-        <h2>5. Mục đích sử dụng dữ liệu</h2>
+        <h2>6. Mục đích sử dụng dữ liệu</h2>
         <p>Dữ liệu cục bộ chỉ được dùng để:</p>
         <ul>
           <li>hiển thị đúng tiến trình, lựa chọn, ký ức và địa điểm HACHI đã mở;</li>
@@ -130,7 +158,7 @@
       </section>
 
       <section id="retention">
-        <h2>6. Thời hạn lưu giữ và cách xóa</h2>
+        <h2>7. Thời hạn lưu giữ và cách xóa</h2>
         <ul>
           <li>bản ghi chăm HACHI có ngày: tối đa <strong>45 ngày</strong>;</li>
           <li>phản hồi Bữa trước: tối đa <strong>28 ngày</strong>;</li>
@@ -154,7 +182,7 @@
       </section>
 
       <section id="sharing">
-        <h2>7. Chia sẻ, clipboard và liên kết ngoài</h2>
+        <h2>8. Chia sẻ, clipboard và liên kết ngoài</h2>
         <p>
           HACHI không tự chia sẻ dữ liệu cục bộ với nhà phát hành, nhà quảng cáo hoặc nhà môi giới dữ liệu. Nếu
           một tính năng cho phép sao chép dữ liệu vào clipboard, không có gì được sao chép cho tới khi bạn chủ
@@ -167,7 +195,7 @@
       </section>
 
       <section id="security">
-        <h2>8. Bảo mật</h2>
+        <h2>9. Bảo mật</h2>
         <p>
           HACHI dùng vùng lưu trữ riêng của ứng dụng Android và tắt Android Auto Backup cho dữ liệu ứng dụng.
           Chúng tôi thiết kế các thao tác lưu và xóa theo hướng không tự suy diễn dữ liệu khi việc đọc hoặc ghi
@@ -177,7 +205,7 @@
       </section>
 
       <section id="children">
-        <h2>9. Trẻ em</h2>
+        <h2>10. Trẻ em</h2>
         <p>
           HACHI được thiết kế cho người trưởng thành và không hướng tới trẻ em. Chúng tôi không cố ý thu thập
           dữ liệu cá nhân của trẻ em qua ứng dụng.
@@ -185,7 +213,7 @@
       </section>
 
       <section id="changes">
-        <h2>10. Thay đổi chính sách</h2>
+        <h2>11. Thay đổi chính sách</h2>
         <p>
           Nếu cách HACHI xử lý dữ liệu thay đổi, chúng tôi sẽ cập nhật trang này và ngày “cập nhật lần cuối”.
           Thay đổi quan trọng sẽ được phản ánh trong ứng dụng hoặc thông tin phát hành khi phù hợp.
@@ -193,7 +221,7 @@
       </section>
 
       <section id="contact">
-        <h2>11. Liên hệ về quyền riêng tư</h2>
+        <h2>12. Liên hệ về quyền riêng tư</h2>
         <p>Gửi thư về quyền riêng tư hoặc yêu cầu liên quan tới HACHI tới địa chỉ đăng ký dưới đây:</p>
         <div class="contact-card">
           <address>

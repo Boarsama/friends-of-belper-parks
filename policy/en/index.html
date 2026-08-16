@@ -29,9 +29,10 @@
       <p class="meta"><strong>Effective and last updated:</strong> 16 August 2026</p>
 
       <div class="summary">
-        <strong>In brief:</strong> HACHI requires no account, contains no advertising or third-party analytics
-        SDK, and does not automatically upload app data to a server. Data you choose to save stays in the app's
-        private storage on your device and can be deleted by you.
+        <strong>In brief:</strong> HACHI requires no account and contains no advertising. Optional Firebase
+        Analytics is off by default and is activated only after your consent. Your care journey, movement
+        details, notes and meal entries stay in the app's private storage on your device and can be deleted by
+        you. An optional HACHI Plus upgrade is sold as a one-time Google Play purchase.
       </div>
 
       <nav class="contents" aria-label="Contents">
@@ -41,6 +42,7 @@
           <li><a href="#scope">Scope</a></li>
           <li><a href="#data">On-device data</a></li>
           <li><a href="#not-collected">Data not collected</a></li>
+          <li><a href="#analytics">Optional analytics and HACHI Plus</a></li>
           <li><a href="#purpose">How data is used</a></li>
           <li><a href="#retention">Retention and deletion</a></li>
           <li><a href="#sharing">Sharing and external links</a></li>
@@ -96,16 +98,16 @@
       </section>
 
       <section id="not-collected">
-        <h2>4. Data and permissions HACHI does not collect</h2>
+        <h2>4. Data and permissions not used by HACHI's core features</h2>
         <p>This release:</p>
         <ul>
           <li>does not require an account or sign-in;</li>
           <li>contains no advertising and does not track people across apps;</li>
-          <li>integrates no third-party analytics or advertising SDK;</li>
+          <li>does not use an advertising SDK, advertising ID, ad personalisation or a user ID;</li>
           <li>does not request camera, photo/video, microphone, location, contacts or body-sensor access;</li>
           <li>does not read from or write to Health Connect;</li>
           <li>does not store food photos, camera data, barcodes, GPS data or raw sensor samples;</li>
-          <li>does not automatically transmit app data over the Internet.</li>
+          <li>does not upload your care journey, movement details, notes, meal entries or HACHI memories.</li>
         </ul>
         <p>
           Google Play and the Android operating system may separately process technical data to distribute,
@@ -114,8 +116,33 @@
         </p>
       </section>
 
+      <section id="analytics">
+        <h2>5. Optional analytics and HACHI Plus purchase</h2>
+        <p>
+          HACHI includes Firebase Analytics to help us understand whether the basic care journey works. It is
+          <strong>off by default</strong>. If you explicitly enable analytics in Settings, HACHI may send a
+          small fixed set of events such as app opened, movement started or completed, care step committed,
+          journey opened, and HACHI Plus purchase status. HACHI adds no event parameters, free text, exercise
+          choice, health observation, note, meal entry, journey memory, phone number, email address or user ID.
+        </p>
+        <p>
+          Firebase may automatically process basic app, device and session information and a pseudonymous app
+          instance identifier when analytics is enabled. Google provides Firebase as our service provider. You
+          can withdraw consent in HACHI Settings; collection is then disabled and HACHI requests deletion of
+          its local analytics identifier. Information already sent is subject to Google's processing and
+          retention controls. See <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a>.
+        </p>
+        <p>
+          HACHI Plus is an optional, one-time in-app product sold and processed by Google Play. Google handles
+          payment credentials and the purchase transaction under its own policies. HACHI receives the product
+          and purchase status needed to unlock Plus and keeps a local entitlement cache; it does not store your
+          card or bank details. The free one-minute movement, safety exits, First Aid, core journey and recent
+          care memories do not require HACHI Plus.
+        </p>
+      </section>
+
       <section id="purpose">
-        <h2>5. How the data is used</h2>
+        <h2>6. How the data is used</h2>
         <p>Local data is used only to:</p>
         <ul>
           <li>show accurate progress, choices, memories and places opened with HACHI;</li>
@@ -128,7 +155,7 @@
       </section>
 
       <section id="retention">
-        <h2>6. Retention and deletion</h2>
+        <h2>7. Retention and deletion</h2>
         <ul>
           <li>dated HACHI care records: up to <strong>45 days</strong>;</li>
           <li>Previous Meal feedback: up to <strong>28 days</strong>;</li>
@@ -151,7 +178,7 @@
       </section>
 
       <section id="sharing">
-        <h2>7. Sharing, clipboard and external links</h2>
+        <h2>8. Sharing, clipboard and external links</h2>
         <p>
           HACHI does not automatically share local data with the publisher, advertisers or data brokers. If a
           feature offers a clipboard export, nothing is copied until you explicitly activate that control;
@@ -165,7 +192,7 @@
       </section>
 
       <section id="security">
-        <h2>8. Security</h2>
+        <h2>9. Security</h2>
         <p>
           HACHI uses Android private app storage and disables Android Auto Backup for app data. Its read, write
           and deletion flows are designed not to invent data when storage operations fail. No electronic
@@ -175,7 +202,7 @@
       </section>
 
       <section id="children">
-        <h2>9. Children</h2>
+        <h2>10. Children</h2>
         <p>
           HACHI is designed for adults and is not directed at children. We do not knowingly collect children's
           personal data through the app.
@@ -183,7 +210,7 @@
       </section>
 
       <section id="changes">
-        <h2>10. Changes to this policy</h2>
+        <h2>11. Changes to this policy</h2>
         <p>
           If HACHI's data practices change, we will update this page and its “last updated” date. Material
           changes will also be reflected in the app or release information where appropriate.
@@ -191,7 +218,7 @@
       </section>
 
       <section id="contact">
-        <h2>11. Privacy contact</h2>
+        <h2>12. Privacy contact</h2>
         <p>Send privacy correspondence or requests concerning HACHI to the registered office below:</p>
         <div class="contact-card">
           <address>

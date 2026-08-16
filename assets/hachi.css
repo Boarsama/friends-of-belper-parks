@@ -1,0 +1,61 @@
+.hachi-page { background: #f8f3e7; }
+.hachi-nav { display: flex; }
+.hachi-hero { min-height: 720px; padding: 170px 0 90px; overflow: hidden; color: white; background: #173c34; }
+.hachi-hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: 90px; }
+.hachi-hero h1 { max-width: 760px; margin: 0; font-size: clamp(54px, 7vw, 92px); }
+.hachi-lead { max-width: 650px; margin: 30px 0 0; color: rgba(255,255,255,.72); font-size: 19px; }
+.hachi-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 38px; }
+.hachi-share { min-height: 52px; padding: 0 24px; border: 1px solid rgba(255,255,255,.38); border-radius: 3px; color: white; background: transparent; font-weight: 700; cursor: pointer; }
+.hachi-share:hover, .hachi-share:focus-visible { color: #173c34; background: white; }
+.hachi-share-status { min-height: 26px; color: #d7e4a3; }
+.hachi-portrait { position: relative; min-height: 500px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.14); border-radius: 250px 250px 28px 28px; background: #dce6be; box-shadow: 32px 32px 0 rgba(255,255,255,.045); }
+.hachi-body { position: relative; width: 270px; height: 330px; border-radius: 48% 48% 44% 44%; background: #fff5d9; box-shadow: inset 0 -24px 0 rgba(105,141,93,.12), 0 30px 55px rgba(23,60,52,.18); }
+.hachi-eye { position: absolute; top: 126px; width: 28px; height: 36px; border-radius: 50%; background: #19372f; box-shadow: inset 0 -8px 0 #416354; }
+.hachi-eye.left { left: 68px; }.hachi-eye.right { right: 68px; }
+.hachi-cheek { position: absolute; top: 180px; width: 36px; height: 17px; border-radius: 50%; background: #edaf83; opacity: .74; }
+.hachi-cheek.left { left: 37px; }.hachi-cheek.right { right: 37px; }
+.hachi-mouth { position: absolute; top: 197px; left: 50%; width: 28px; height: 14px; border-bottom: 3px solid #19372f; border-radius: 0 0 50% 50%; transform: translateX(-50%); }
+.hachi-sprout { position: absolute; z-index: 2; top: 39px; left: 50%; width: 120px; height: 90px; transform: translateX(-50%); }
+.hachi-sprout i, .hachi-sprout b { position: absolute; top: 0; width: 52px; height: 72px; border-radius: 90% 8% 90% 8%; background: #789d54; }
+.hachi-sprout i { left: 9px; transform: rotate(-34deg); }.hachi-sprout b { right: 8px; transform: scale(.86) rotate(60deg); }
+.hachi-sprout span { position: absolute; left: 59px; top: 42px; width: 5px; height: 62px; border-radius: 8px; background: #4b754a; }
+.hachi-portrait > p { position: absolute; right: 22px; bottom: 22px; left: 22px; margin: 0; padding: 17px 20px; display: grid; color: #173c34; background: rgba(255,255,255,.84); }
+.hachi-portrait > p span { font-size: 13px; }
+.hachi-proof { border-bottom: 1px solid rgba(16,39,32,.14); background: #eef0df; }
+.hachi-proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+.hachi-proof article { min-height: 250px; padding: 38px; border-left: 1px solid rgba(16,39,32,.14); }
+.hachi-proof article:last-child { border-right: 1px solid rgba(16,39,32,.14); }
+.hachi-proof strong { color: #e67e50; font-size: 12px; letter-spacing: .12em; }
+.hachi-proof h2 { margin: 38px 0 12px; font-size: 26px; }.hachi-proof p { margin: 0; color: #607069; }
+.hachi-community-section { background: #f8f3e7; }
+.hachi-community-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 90px; align-items: start; }
+.hachi-community-grid h2 { margin: 0; font-size: clamp(40px, 5vw, 64px); }
+.hachi-community-grid > div:first-child > p:last-child { color: #53635d; font-size: 18px; }
+.hachi-channel-card { padding: 36px; border-top: 4px solid #e67e50; background: white; box-shadow: 0 30px 70px rgba(22,53,45,.1); }
+.hachi-channel-card h3 { margin: 0 0 22px; font-size: 24px; }
+.hachi-channel-card a { display: grid; padding: 17px 0; border-bottom: 1px solid rgba(16,39,32,.14); color: #173c34; text-decoration: none; font-weight: 700; }
+.hachi-channel-card a span { color: #718079; font-size: 13px; font-weight: 500; }
+.hachi-channel-card p { margin: 24px 0 0; color: #607069; font-size: 14px; }
+.hachi-en { padding: 92px 0; color: white; background: #e67e50; }
+.hachi-en h2 { margin: 0; font-size: clamp(40px, 6vw, 66px); }.hachi-en p { max-width: 720px; margin: 24px 0 32px; font-size: 18px; }
+@media (max-width: 900px) {
+  .hachi-hero-grid, .hachi-community-grid { grid-template-columns: 1fr; }
+  .hachi-portrait { width: min(520px, 100%); margin: 0 auto; }
+}
+@media (max-width: 600px) {
+  .hachi-nav { display: none; }
+  .hachi-hero { padding: 125px 0 68px; }
+  .hachi-hero h1 { font-size: 48px; }
+  .hachi-portrait { min-height: 430px; }
+  .hachi-body { width: 220px; height: 280px; }
+  .hachi-eye { top: 105px; }.hachi-eye.left { left: 55px; }.hachi-eye.right { right: 55px; }
+  .hachi-cheek { top: 157px; }.hachi-mouth { top: 174px; }
+  .hachi-proof-grid { grid-template-columns: 1fr; }
+  .hachi-proof article { min-height: 0; border-right: 0; border-bottom: 1px solid rgba(16,39,32,.14); }
+  .hachi-proof h2 { margin-top: 20px; }
+  .hachi-community-section { padding: 72px 0; }
+  .hachi-channel-card { padding: 26px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hachi-share { transition: none; }
+}

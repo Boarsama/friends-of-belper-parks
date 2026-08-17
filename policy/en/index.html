@@ -31,8 +31,9 @@
       <div class="summary">
         <strong>In brief:</strong> HACHI requires no account, contains no advertising and does not track people
         across apps. Optional Firebase Analytics is off by default and starts only after explicit consent.
-        HACHI's care journey, notes and health-adjacent answers remain on your device. Google Play processes an
-        optional HACHI Plus purchase when that product is made available.
+        HACHI's care journey, notes, Plus experiment answers and health-adjacent answers remain on your device.
+        The open beta may unlock the complete HACHI Plus preview free of charge; this is not a purchase or
+        permanent entitlement. Google Play processes a purchase only if that product is later made available.
       </div>
 
       <nav class="contents" aria-label="Contents">
@@ -92,6 +93,10 @@
             structured receipts and decisions needed to prevent duplicates and preserve correct app state.
           </li>
           <li>
+            if you start a Plus experiment: one reviewed exercise identifier, a 7- or 14-day calendar window,
+            at most one “lighter”, “same” or “unsure” answer per day, and at most six recent summaries;
+          </li>
+          <li>
             your Analytics consent choice and, if Plus is made available and purchased, an on-device offline
             entitlement cache.
           </li>
@@ -114,7 +119,8 @@
           <li>does not store food photos, camera data, barcodes, GPS data or raw sensor samples;</li>
           <li>
             does not send HACHI care records, exercise choices, symptoms, safety answers, First Aid notes,
-            meal records, calorie values, journey memories, purchase tokens or free text to Firebase Analytics.
+            meal records, calorie values, journey memories, Plus experiment answers, purchase tokens or free
+            text to Firebase Analytics.
           </li>
         </ul>
         <p>
@@ -132,6 +138,7 @@
           <li>run the movement or content you selected;</li>
           <li>prevent duplicate records and preserve state when the app is closed and reopened;</li>
           <li>show local history, reminders or suggestions you enabled;</li>
+          <li>summarise your own bounded Plus experiment observations without claiming a health effect;</li>
           <li>let you view, change or delete your data.</li>
         </ul>
         <p>HACHI does not sell personal data or use it for advertising.</p>
@@ -163,7 +170,8 @@
         </p>
         <p>
           HACHI Plus purchasing is disabled in open-beta builds until the release has completed Play licensing,
-          refund and revocation verification. A preview in the app is not proof that the product is available
+          refund and revocation verification. During open beta, the complete Plus preview may be available free
+          of charge. Preview access is not a purchase, permanent ownership or proof that the product is available
           for sale.
         </p>
       </section>
@@ -174,6 +182,10 @@
           <li>dated HACHI care records: up to <strong>45 days</strong>;</li>
           <li>Previous Meal feedback: up to <strong>28 days</strong>;</li>
           <li>user-chosen movement receipts: up to <strong>30 days</strong>;</li>
+          <li>
+            an active Plus experiment remains until its 7- or 14-day window ends or you stop it; at most
+            <strong>six</strong> recent experiment summaries are retained;
+          </li>
           <li>other dated journals and decisions: generally up to <strong>90 days</strong>;</li>
           <li>
             current state such as settings, profiles, journey step total and opened places stays until you

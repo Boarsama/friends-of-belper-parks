@@ -2,6 +2,11 @@
 
 Static website prepared for the organisation and designed to run directly on GitHub Pages.
 
+The repository also hosts the HACHI Android companion landing page at `/hachi/`
+and its Vietnamese/English privacy policy at `/policy/` and `/policy/en/`.
+Android App Links must remain unverified until the Google Play **App signing**
+certificate fingerprint (not the upload certificate) is supplied and reviewed.
+
 ## Public organisation details used
 
 - Legal name: FRIENDS OF BELPER PARKS LIMITED

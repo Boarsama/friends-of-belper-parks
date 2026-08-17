@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.hachiwellbeing.companion",
+      "sha256_cert_fingerprints": [
+        "DE:DF:5F:F6:5E:66:BB:FE:F4:95:E0:3B:75:97:ED:EF:6D:BE:60:8B:C5:80:DD:AC:F2:9C:68:1F:5F:7B:CF:87"
+      ]
+    }
+  }
+]
